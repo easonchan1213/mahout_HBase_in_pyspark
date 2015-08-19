@@ -8,3 +8,12 @@ $MAHOUT_HOME/mahout spark-itemsimilarity -i $hdfshome/data2.csv -o $hdfshome -fc
 
 For more info:
 https://mahout.apache.org/users/algorithms/intro-cooccurrence-spark.html
+
+If you're gonna run this code snippet, make sure you have add dependecy jars into your spark classpath
+
+These jars should be added in classpath:
+/root/spark-1.4.1/examples/target/spark-examples_2.10-1.4.1.jar
+/root/spark-1.4.1/examples/target/scala-2.10/spark-examples-1.4.1-hadoop2.5.0.jar
+/root/spark-1.4.1/core/target/jars/guava-14.0.1.jar
+
+Simply run pyspark with --jars [classes]
